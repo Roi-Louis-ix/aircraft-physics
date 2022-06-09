@@ -12,12 +12,421 @@ body {
   <body>
     <p>So it turns out that wind tunnels cost significantly more than fifty cents per hour, which means that it exceeds this project's budget. But fear not; knowledge of a wing, its shape, and its function will be covered here, and it most certainly fits the budget.</p>
     <p>The purpose of wings is to create lift, which is the aircraft's upper force. If lift exceeds weight (the product of mass and gravitational acceleration), the aircraft will have a net upward force, accelerating upwards. It is modeled by this equation:</p><br>
+    <h4>Drag Force and its Components</h4>
     <p>Another force created by the wing is drag, which resists motion. It is caused by the movement of any object through a fluid. There are three types of drag, which are skin friction drag, form drag, and wave drag.
     <p><strong>Skin friction drag</strong> is the friction between the object's surface and the fluid around it, whereof the fluid is air in our situation.
       <strong>Form drag</strong> is the drag arising from the object's shape.
-      <strong>Wave drag</strong> is caused by shock waves, which are formed as part of an object travels at supersonic speeds. This affects the shape of the wings of faster aircraft.
-      <br>Drag is modeled by this equation:</br>
+      <strong>Wave drag</strong> is caused by shock waves, which are formed as part of an object travels at supersonic speeds. This affects the drag felt by faster aircraft. Drag is modeled by this equation:
   <br>D=Cd*(ρV^2)/2*A</br>
-</p>
+<li><strong>Cd<strong> is the coefficient of drag. It is influenced by shape, airflow, and angle of attack (the angle between the wing and the airflow).<sup><a href="https://www.grc.nasa.gov/WWW/k-12/airplane/dragco.html">source</a></sup></p>
+
+<tbody><tr bgcolor="FFFFCC">
+	<th colspan="5">
+	<font face="arial, helvetica">
+	Minimum Drag Coefficients
+	</font>
+	</th>
+</tr>
+<tr valign="center" bgcolor="FFFFCC" align="center">
+	<th>
+	<font face="arial, helvetica">
+	Aircraft
+	</font>
+	</th>
+	<th>
+	<font face="arial, helvetica">
+	Type
+	</font>
+	</th>
+	<th>
+	<font face="arial, helvetica">
+	Aspect Ratio
+	</font>
+	</th>
+	<th width="160">
+	<font face="arial, helvetica">
+	C<sub>D<sub>min</sub></sub>
+	</font>
+	</th>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	RQ-2 Pioneer
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Single piston-engine UAV
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	9.39
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0600
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	North American Navion
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Single piston-engine general aviation
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	6.20
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0510
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Cessna 172/182
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Single piston-engine general aviation
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	7.40
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0270
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Cessna 310
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin piston-engine general aviation
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	7.78
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0270
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Marchetti S-211
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Single jet-engine military trainer
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	5.09
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0205
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Cessna T-37
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin jet-engine military trainer
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	6.28
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0200
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Beech 99
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin turboprop commuter
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	7.56
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0270
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Cessna 620
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Four piston-engine transport
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	8.93
+	</font>
+	</td>
+
+	<td>
+	<font face="arial, helvetica">
+	0.0322
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Learjet 24
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin jet-engine business jet
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	5.03
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0216
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Lockheed Jetstar
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Four jet-engine business jet
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	5.33
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0126
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	<a href="../../aircraft/fighter/f104/">F-104 Starfighter</a>
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Single jet-engine fighter
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	2.45
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0480
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	<a href="../../aircraft/fighter/f4/">F-4 Phantom II</a>
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin jet-engine fighter
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	2.83
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0205 (subsonic) <br>
+	0.0439 (supersonic)
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Lightning
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Twin jet-engine fighter
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	2.52
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0200
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	Convair 880
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Four jet-engine airliner
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	7.20
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0240
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	<a href="../../aircraft/jetliner/dc8/">Douglas DC-8</a>
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Four jet-engine airliner
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	7.79
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0188
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	<a href="../../aircraft/jetliner/b747/">Boeing 747</a>
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Four jet-engine airliner
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	6.98
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0305
+	</font>
+	</td>
+</tr>
+<tr valign="top" align="center">
+	<td>
+	<font face="arial, helvetica">
+	<a href="../../aircraft/research/x15/">X-15</a>
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	Hypersonic research plane
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	2.50
+	</font>
+	</td>
+	<td>
+	<font face="arial, helvetica">
+	0.0950
+	</font>
+	</td>
+</tr>
+</tbody>
+<p><style {font-size: 10;}> This table was found <a href="http://www.aerospaceweb.org/question/aerodynamics/q0184.shtml">here.</a></style></p>
+<p>
   </body>
 </html>
